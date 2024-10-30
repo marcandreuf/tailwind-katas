@@ -49,8 +49,10 @@
         ring-offset-amber-400
         text-neutral-900
         hover:text-neutral-500
-        transition-colors
-      ">
+        transition-colors "
+        aria-expanded="false"
+        aria-label="open menu"
+        >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
         viewBox="0 0 24 24" stroke-width="1.5" 
         stroke="currentColor" class="size-8">
@@ -58,7 +60,7 @@
         </svg>        
       </button>
       <div role="menubar" class="
-        flex
+        hidden        
         flex-col
         gap-4
         absolute
@@ -137,6 +139,45 @@
       </div>
     </div>
     </nav>
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div class="
+      absolute
+      inset-0
+      bottom-8
+      md:bottom-24
+      xl:bottom-32
+      -z-10
+      bg-gradient-to-b
+      from-amber-400
+      to-amber-600
+      "></div>
+      <div class="container
+      mx-auto
+      grid
+      grid-rows-1
+      place-items-end
+      px-2
+      ">
+        <img src="./assets/couch.png" class="
+        row-start-1
+        row-end-2
+        col-start-1
+        col-end-2
+        mx-auto
+        " alt="Couch">
+        <img src="./assets/app.svg" class="
+        row-start-1
+        row-end-2
+        col-start-1
+        col-end-2
+        mx-auto
+        w-40
+        sm:w-52
+        md:w-64
+        lg:w-72
+        " alt="app">
+      </div>
+    </header>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
